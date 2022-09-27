@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  course_enviroment: 
+    image: openjdk:8
+    container_name: functional_programming_with_java 
+    tty: true
+    working_dir: /course_files    
+    volumes:
+      - ".:/course_files"
+  
